@@ -4,7 +4,7 @@ class Player:
     def __init__(self, nome):
         self.hp = 100
         self.name = nome
-        self.dano = 2
+        self.dano = 20
         self.defesa = 10
         self.dinheiro = 0
     def mostrar_status(self):
@@ -18,4 +18,6 @@ class Player:
         if danoMit <= 0:
             print("Dano defendido totalmente!")
         print(f"Você tomou {danoMit} de dano! \nSeu HP atual é:{self.hp}")
+    def atacar(self):
+        return self.dano
        
