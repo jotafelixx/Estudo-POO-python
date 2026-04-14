@@ -14,7 +14,7 @@ while jogador.hp > 0 and inimigo.hp > 0:
     jogador.tomar_dano(dano_inimigo)
 if inimigo.hp <= 0:
     jogador.dinheiro += inimigo.recompensa
-    print(f'Você matou o inimigo de nivel {inimigo.nivel} e foi adicionado {dinheiro} na sua carteira você tem {carteira} agora!')
+    print(f'Você matou o inimigo de nivel {inimigo.nivel} e foi adicionado {inimigo.recompensa} na sua carteira você tem {jogador.dinheiro} agora!')
 elif jogador.hp == 0:
     print("Você perdeu!:(")
 
